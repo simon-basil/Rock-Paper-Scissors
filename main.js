@@ -25,6 +25,29 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+function game(){
+    computerSelection;
+    playerSelection;
+    playRound(playerSelection, computerSelection);
+
+    computerSelection;
+    playerSelection;
+    playRound(playerSelection, computerSelection);
+
+    computerSelection;
+    playerSelection;
+    playRound(playerSelection, computerSelection);
+
+    computerSelection;
+    playerSelection;
+    playRound(playerSelection, computerSelection);
+
+    computerSelection;
+    playerSelection;
+    playRound(playerSelection, computerSelection);
+    
+}
+game();
 console.log(`PLAYER: ${playerSelection}`);
 console.log(`COMPUTER: ${computerSelection}`);
 console.log(playRound(playerSelection, computerSelection));
