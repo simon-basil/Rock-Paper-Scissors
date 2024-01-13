@@ -5,7 +5,7 @@ function getComputerChoice(){
 }
 
 const computerSelection = getComputerChoice();
-const playerSelection = prompt('Please choose between "Rock", "Paper" or "Scissors"').toLowerCase();
+let playerSelection = prompt('Please choose between "Rock", "Paper" or "Scissors"').toLowerCase();
 
 function playRound(playerSelection, computerSelection){
     if (playerSelection === computerSelection){
@@ -26,29 +26,20 @@ function playRound(playerSelection, computerSelection){
 }
 
 function game(){
-    computerSelection;
-    playerSelection;
+    for (i = 1; i <= 4; i++){
+    getComputerChoice();
+    let computerSelection = getComputerChoice();
+    let playerSelection = prompt('Please choose between "Rock", "Paper" or "Scissors"').toLowerCase();
     playRound(playerSelection, computerSelection);
 
-    computerSelection;
-    playerSelection;
-    playRound(playerSelection, computerSelection);
+    console.log(`PLAYER: ${playerSelection}`);
+    console.log(`COMPUTER: ${computerSelection}`);
+    console.log(playRound(playerSelection, computerSelection));
+    }
 
-    computerSelection;
-    playerSelection;
-    playRound(playerSelection, computerSelection);
-
-    computerSelection;
-    playerSelection;
-    playRound(playerSelection, computerSelection);
-
-    computerSelection;
-    playerSelection;
-    playRound(playerSelection, computerSelection);
-    
 }
-game();
 console.log(`PLAYER: ${playerSelection}`);
 console.log(`COMPUTER: ${computerSelection}`);
 console.log(playRound(playerSelection, computerSelection));
+game();
 
